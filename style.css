@@ -158,3 +158,33 @@ width:0%;
 background:#4CAF50;
 border-radius:10px;
 }
+button{
+padding:10px 14px;
+border:none;
+background:linear-gradient(135deg,#6366f1,#8b5cf6);
+color:white;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.app{
+background:white;
+width:420px;
+padding:25px;
+border-radius:16px;
+box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+.card{
+background:#f9fafb;
+padding:14px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 5px 10px rgba(0,0,0,0.08);
+}
