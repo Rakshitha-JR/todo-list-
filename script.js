@@ -169,7 +169,39 @@ updateDashboard();
 updateProgress();
 
 }
+.dashboard{
+margin-bottom:30px;
+}
 
+.stats{
+display:flex;
+gap:15px;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+width:120px;
+text-align:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.progress-container{
+width:100%;
+height:10px;
+background:#eee;
+border-radius:10px;
+margin-top:15px;
+}
+
+#progressBar{
+height:10px;
+width:0%;
+background:#4CAF50;
+border-radius:10px;
+}
 document.getElementById("themeToggle").onclick=function(){
 document.body.classList.toggle("dark");
 }
