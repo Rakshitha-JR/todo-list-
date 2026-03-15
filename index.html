@@ -5,9 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Goals Todo Dashboard</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -16,9 +14,8 @@
 
 <header>
 <h1>Goals Dashboard</h1>
-<button onclick="toggleDark()">🌙</button>
+<button id="themeToggle">🌙</button>
 </header>
-
 
 <div class="dashboard">
 
@@ -49,14 +46,9 @@
 
 </div>
 
-
-<div class="progress">
-<div id="progressBar"></div>
-</div>
-
-
 <div class="input-section">
-<input id="taskInput" placeholder="Add new goal">
+
+<input type="text" id="taskInput" placeholder="Add new goal">
 
 <select id="taskType">
 <option value="daily">Daily</option>
@@ -64,18 +56,22 @@
 </select>
 
 <button onclick="addTask()">Add</button>
+
 </div>
 
-
-<input id="searchInput" placeholder="Search tasks..." onkeyup="searchTasks()">
-
+<input type="text" id="searchInput" placeholder="Search tasks..." onkeyup="searchTasks()">
 
 <div class="filters">
+
 <button onclick="filterTasks('all')">All</button>
 <button onclick="filterTasks('active')">Active</button>
 <button onclick="filterTasks('completed')">Completed</button>
+
 </div>
 
+<div class="progress">
+<div id="progressBar"></div>
+</div>
 
 <ul id="taskList"></ul>
 
