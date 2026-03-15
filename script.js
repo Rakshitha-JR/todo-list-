@@ -164,29 +164,9 @@ li.innerHTML=`
 list.appendChild(li);
 
 });
-  function updateDashboard(){
-
-const tasks = document.querySelectorAll("li");
-const completed = document.querySelectorAll(".completed");
-
-let total = tasks.length;
-let done = completed.length;
-let pending = total - done;
-
-document.getElementById("totalTasks").innerText = total;
-document.getElementById("completedTasks").innerText = done;
-document.getElementById("pendingTasks").innerText = pending;
-
-let progress = 0;
-
-if(total > 0){
-progress = (done / total) * 100;
-}
-
-document.getElementById("progressBar").style.width = progress + "%";
-}
-
+ 
 updateDashboard();
 updateProgress();
 
 }
+
